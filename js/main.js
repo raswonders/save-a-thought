@@ -17,9 +17,9 @@ function save() {
 
   // add li into the body
   getUlElem().appendChild(liElem);
-  inputElem.value = "";
+  inputElem.value = '';
 }
 
 function deleteAll() {
-  
+  getUlElem().textContent = '';
 }
