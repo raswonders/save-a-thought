@@ -1,3 +1,8 @@
+function saveOnSubmit(e) {
+  save();
+  e.preventDefault();
+}
+
 function getUlElem() {
   return document.querySelectorAll("ul")[0];
 }
@@ -8,7 +13,7 @@ function save() {
   let liElem = document.createElement("li");
 
   // If msg is empty quit
-  if (inputElem.value == "") {
+  if (inputElem.value === "") {
     return
   }
 
